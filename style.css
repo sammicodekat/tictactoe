@@ -1,0 +1,44 @@
+#root {
+  margin: 50px auto;
+  width: 490px;
+  height: 490px;
+  position: relative;
+}
+
+.tile {
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+  background: pink;
+  border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.tile:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.turn_0:hover:after,
+.clicked_0:after {
+  background: orange;
+  content: url(/cat.png);
+}
+
+.turn_1:hover:after,
+.clicked_1:after {
+  background: #0073e6;
+  content: url(/dog.png);
+}
+
+.visible {
+  display:block;
+}
+.hidden {
+  display:none;
+}
