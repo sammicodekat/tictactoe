@@ -39,7 +39,7 @@ var Game = React.createClass({
     var check = function(a, b, c) {
       return !!(a + b + c).match(/^(000|111)$/gi);
     };
-
+    if(!winner){
     if (check(gameTiles[0], gameTiles[1], gameTiles[2]) || check(gameTiles[0], gameTiles[3], gameTiles[6]) || check(gameTiles[1], gameTiles[4], gameTiles[7]) ||
       check(gameTiles[2], gameTiles[5], gameTiles[8]) || check(gameTiles[3], gameTiles[4], gameTiles[5]) || check(gameTiles[6], gameTiles[7], gameTiles[8]) ||
       check(gameTiles[2], gameTiles[4], gameTiles[6]) || check(gameTiles[0], gameTiles[4], gameTiles[8])) {
@@ -57,6 +57,7 @@ var Game = React.createClass({
         player:playerNow
       });
     }
+  }
 
   },
 
