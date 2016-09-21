@@ -27,13 +27,13 @@
 .turn_0:hover:after,
 .clicked_0:after {
   background: orange;
-  content: url(/cat.png);
+  content: url(cat.png);
 }
 
 .turn_1:hover:after,
 .clicked_1:after {
   background: #0073e6;
-  content: url(/dog.png);
+  content: url(dog.png);
 }
 
 .visible {
